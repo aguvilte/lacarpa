@@ -78,7 +78,6 @@ Public Class Login
     'MÉTODO QUE REALIZA LA CONEXIÓN
 
     Private Sub ValidarConexion()
-        MsgBox("SDSDSD")
         Conectarse()
         comando = New OleDbCommand("SELECT tipo_acceso FROM usuarios WHERE nombre='" & TbUsuario.Text & "' AND contrasenia='" & TbContraseña.Text & "'", Conexion)
 
