@@ -90,7 +90,7 @@ Public Class Login
             Principal.Show()
             Me.Hide()
         Else
-            MsgBox("Usuario o password incorrectos", MsgBoxStyle.Exclamation)
+            MsgBox("Usuario o password incorrectos", MsgBoxStyle.Exclamation, "Error en el inicio de sesión")
         End If
 
         dataReader.Close()
@@ -106,5 +106,4 @@ Public Class Login
         btIniciar.Location = New Point(btIniciar.Location.X + 5, btIniciar.Location.Y + 5)
         btIniciar.Size = New Point(btIniciar.Size.Width - 10, btIniciar.Size.Height - 10)
     End Sub
-
 End Class

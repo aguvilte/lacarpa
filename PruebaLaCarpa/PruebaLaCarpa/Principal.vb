@@ -15,6 +15,7 @@ Public Class Principal
     End Function
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ToolTip()
         Select Case Login.NivelAcceso
             Case 1
                 btStock.Enabled = True
@@ -384,8 +385,9 @@ Public Class Principal
     End Sub
 
     Private Sub btDetallesVentas_Click(sender As Object, e As EventArgs) Handles btDetallesVentas.Click
-        Estadisticas.Show()
-        Me.Close()
+        'Estadisticas.Show()
+        'Me.Close()
+        ToolTip()
     End Sub
 
     Private Sub btStock_Click(sender As Object, e As EventArgs) Handles btStock.Click
@@ -412,5 +414,17 @@ Public Class Principal
 
     Private Sub btConfigurar_Click(sender As Object, e As EventArgs) Handles btConfigurar.Click
         PrNuevoEdit.Show()
+    End Sub
+
+    Private Sub ToolTip()
+        Dim toolTip1 As New ToolTip
+        toolTip1.ShowAlways = True
+        toolTip1.SetToolTip(Me.btDetallesVentas, "Deshabilitado")
+    End Sub
+
+    Private Sub btCerrarSesion_Click(sender As Object, e As EventArgs) Handles btCerrarSesion.Click
+        If MsgBox("¿Está seguro que quiere cerrar el programa?", MsgBoxStyle.YesNo, "Cerrar programa") = MsgBoxResult.Yes Then
+            Application.ExitThread()
+        End If
     End Sub
 End Class

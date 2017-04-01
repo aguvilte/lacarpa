@@ -1115,7 +1115,7 @@ Partial Class Principal
         '
         'btDetallesVentas
         '
-        Me.btDetallesVentas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btDetallesVentas.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.btDetallesVentas.Image = Global.PruebaLaCarpa.My.Resources.Resources.bar_chart
         Me.btDetallesVentas.Location = New System.Drawing.Point(82, 19)
         Me.btDetallesVentas.Name = "btDetallesVentas"

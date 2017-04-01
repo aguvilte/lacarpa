@@ -42,6 +42,11 @@ Public Class MesaRecepcion
         btnAgregarProd2.Visible = False
         btnAgregarProd3.Visible = False
         btnAgregarProd4.Visible = False
+
+        dgvProductos1.DataSource = ""
+        dgvProductos2.DataSource = ""
+        dgvProductos3.DataSource = ""
+        dgvProductos4.DataSource = ""
     End Sub
 
     'Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
@@ -159,24 +164,24 @@ Public Class MesaRecepcion
         Return devuelveMonto
     End Function
 
-    Private Sub PintarMesaOcupada()
-        ds = New DataSet
-        ds.Tables.Add("Mesas")
-        da.SelectCommand = New OleDbCommand("SELECT * FROM mesas", Conexion)
-        da.Fill(ds.Tables("Mesas"))
+    'Private Sub PintarMesaOcupada()
+    '    ds = New DataSet
+    '    ds.Tables.Add("Mesas")
+    '    da.SelectCommand = New OleDbCommand("SELECT * FROM mesas", Conexion)
+    '    da.Fill(ds.Tables("Mesas"))
 
-        Dim row As DataRow
-        row = ds.Tables("Mesas").Rows(0)
-        If mesaOcupadaBoolean = True Then
-            row("ocupada") = -1
-        Else
-            row("ocupada") = 0
-        End If
+    '    Dim row As DataRow
+    '    row = ds.Tables("Mesas").Rows(0)
+    '    If mesaOcupadaBoolean = True Then
+    '        row("ocupada") = -1
+    '    Else
+    '        row("ocupada") = 0
+    '    End If
 
-        da.UpdateCommand = New OleDbCommand("UPDATE mesas SET ocupada=@ocu WHERE id_mesa=" & numeroMesa, Conexion)
-        da.UpdateCommand.Parameters.Add("@ocu", OleDbType.Boolean, 10, "ocupada")
-        da.Update(ds.Tables("Mesas"))
-    End Sub
+    '    da.UpdateCommand = New OleDbCommand("UPDATE mesas SET ocupada=@ocu WHERE id_mesa=" & numeroMesa, Conexion)
+    '    da.UpdateCommand.Parameters.Add("@ocu", OleDbType.Boolean, 10, "ocupada")
+    '    da.Update(ds.Tables("Mesas"))
+    'End Sub
 
     Private Sub BuscarIndiceProducto()
         comando = New OleDbCommand("SELECT id_producto FROM productos WHERE nombre = '" & cbNombreProd.Text & "'", Conexion)

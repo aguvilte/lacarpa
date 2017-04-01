@@ -87,7 +87,7 @@ Public Class Mesas1
     Private Sub btnCerrarPedido_Click(sender As Object, e As EventArgs) Handles btnCerrarPedido.Click
         mesaOcupadaBoolean = False
 
-        If MsgBox("¿Está seguro que quiere cerrar el pedido?", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
+        If MsgBox("¿Está seguro que quiere cerrar el pedido?", MsgBoxStyle.OkCancel, "Cerrar pedido") = MsgBoxResult.Ok Then
             ds = New DataSet
             ds.Tables.Add("Ventas")
             ds.Tables.Add("MesasProductos")
