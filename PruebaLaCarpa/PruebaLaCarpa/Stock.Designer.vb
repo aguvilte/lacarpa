@@ -37,7 +37,8 @@ Partial Class Stock
         'dgvStock
         '
         Me.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvStock.Location = New System.Drawing.Point(13, 13)
+        Me.dgvStock.Enabled = False
+        Me.dgvStock.Location = New System.Drawing.Point(12, 74)
         Me.dgvStock.Name = "dgvStock"
         Me.dgvStock.RowHeadersWidth = 4
         Me.dgvStock.Size = New System.Drawing.Size(259, 115)
@@ -45,23 +46,25 @@ Partial Class Stock
         '
         'cbTipoStock
         '
+        Me.cbTipoStock.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTipoStock.FormattingEnabled = True
         Me.cbTipoStock.Items.AddRange(New Object() {"Carne", "Cerdo", "Pollo"})
-        Me.cbTipoStock.Location = New System.Drawing.Point(78, 169)
+        Me.cbTipoStock.Location = New System.Drawing.Point(11, 230)
         Me.cbTipoStock.Name = "cbTipoStock"
-        Me.cbTipoStock.Size = New System.Drawing.Size(121, 21)
+        Me.cbTipoStock.Size = New System.Drawing.Size(260, 24)
         Me.cbTipoStock.TabIndex = 1
         '
         'tbCantidadStock
         '
-        Me.tbCantidadStock.Location = New System.Drawing.Point(78, 222)
+        Me.tbCantidadStock.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbCantidadStock.Location = New System.Drawing.Point(12, 289)
         Me.tbCantidadStock.Name = "tbCantidadStock"
-        Me.tbCantidadStock.Size = New System.Drawing.Size(121, 20)
+        Me.tbCantidadStock.Size = New System.Drawing.Size(142, 23)
         Me.tbCantidadStock.TabIndex = 2
         '
         'btnAgregarStock
         '
-        Me.btnAgregarStock.Location = New System.Drawing.Point(101, 263)
+        Me.btnAgregarStock.Location = New System.Drawing.Point(101, 349)
         Me.btnAgregarStock.Name = "btnAgregarStock"
         Me.btnAgregarStock.Size = New System.Drawing.Size(75, 23)
         Me.btnAgregarStock.TabIndex = 3
@@ -71,26 +74,28 @@ Partial Class Stock
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(78, 150)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(9, 210)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 13)
+        Me.Label1.Size = New System.Drawing.Size(58, 17)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Nombre:"
+        Me.Label1.Text = "Nombre"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(78, 203)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(9, 269)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 13)
+        Me.Label2.Size = New System.Drawing.Size(145, 17)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Cantidad (en gramos):"
+        Me.Label2.Text = "Cantidad (en gramos)"
         '
         'btnVolver
         '
         Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
-        Me.btnVolver.Location = New System.Drawing.Point(116, 313)
+        Me.btnVolver.Location = New System.Drawing.Point(120, 12)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(40, 40)
         Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -101,7 +106,7 @@ Partial Class Stock
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 365)
+        Me.ClientSize = New System.Drawing.Size(283, 401)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)

@@ -59,7 +59,7 @@ Partial Class NuevoProducto
         'btnGuardar
         '
         Me.btnGuardar.Enabled = False
-        Me.btnGuardar.Location = New System.Drawing.Point(61, 196)
+        Me.btnGuardar.Location = New System.Drawing.Point(61, 201)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(75, 23)
         Me.btnGuardar.TabIndex = 3
@@ -122,7 +122,8 @@ Partial Class NuevoProducto
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "NuevoProducto"
-        Me.Text = "NuevoProducto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Agregar producto"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
