@@ -414,6 +414,7 @@ Public Class Principal
 
     Private Sub btConfigurar_Click(sender As Object, e As EventArgs) Handles btConfigurar.Click
         PrNuevoEdit.Show()
+        Me.Close()
     End Sub
 
     Private Sub ToolTip()
@@ -429,6 +430,6 @@ Public Class Principal
     End Sub
 
     Private Sub Principal_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Application.ExitThread()
+        'Application.ExitThread()
     End Sub
 End Class

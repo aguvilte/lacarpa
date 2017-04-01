@@ -61,6 +61,8 @@ Public Class Mesas1
         'ACTUALIZA MONTO DEL PEDIDO ACTUAL
         CalculaMonto()
         btnAgregarProd.Visible = False
+
+        dgvProductos.DataSource = ""
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click

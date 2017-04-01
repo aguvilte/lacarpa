@@ -40,6 +40,7 @@ Partial Class MesaRecepcion
         Me.btnCerrarPedido4 = New System.Windows.Forms.Button()
         Me.btnAgregarProd3 = New System.Windows.Forms.PictureBox()
         Me.btnAgregarProd4 = New System.Windows.Forms.PictureBox()
+        Me.btnVolver = New System.Windows.Forms.PictureBox()
         CType(Me.btnAgregarProd1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvProductos1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvProductos2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +49,7 @@ Partial Class MesaRecepcion
         CType(Me.dgvProductos4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarProd3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarProd4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAgregarProd1
@@ -242,11 +244,23 @@ Partial Class MesaRecepcion
         Me.btnAgregarProd4.TabIndex = 27
         Me.btnAgregarProd4.TabStop = False
         '
+        'btnVolver
+        '
+        Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
+        Me.btnVolver.Location = New System.Drawing.Point(12, 12)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(40, 40)
+        Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnVolver.TabIndex = 28
+        Me.btnVolver.TabStop = False
+        '
         'MesaRecepcion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1008, 452)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnAgregarProd4)
         Me.Controls.Add(Me.btnAgregarProd2)
         Me.Controls.Add(Me.btnAgregarProd3)
@@ -276,6 +290,7 @@ Partial Class MesaRecepcion
         CType(Me.dgvProductos4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAgregarProd3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAgregarProd4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -299,4 +314,5 @@ Partial Class MesaRecepcion
     Friend WithEvents btnCerrarPedido4 As Button
     Friend WithEvents btnAgregarProd3 As PictureBox
     Friend WithEvents btnAgregarProd4 As PictureBox
+    Friend WithEvents btnVolver As PictureBox
 End Class

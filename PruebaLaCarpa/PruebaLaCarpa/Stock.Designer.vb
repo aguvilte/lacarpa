@@ -29,8 +29,9 @@ Partial Class Stock
         Me.btnAgregarStock = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnVolver = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.PictureBox()
         CType(Me.dgvStock, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgvStock
@@ -87,12 +88,14 @@ Partial Class Stock
         '
         'btnVolver
         '
-        Me.btnVolver.Location = New System.Drawing.Point(67, 314)
+        Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
+        Me.btnVolver.Location = New System.Drawing.Point(116, 313)
         Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(142, 30)
-        Me.btnVolver.TabIndex = 8
-        Me.btnVolver.Text = "Volver"
-        Me.btnVolver.UseVisualStyleBackColor = True
+        Me.btnVolver.Size = New System.Drawing.Size(40, 40)
+        Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnVolver.TabIndex = 20
+        Me.btnVolver.TabStop = False
         '
         'Stock
         '
@@ -113,6 +116,7 @@ Partial Class Stock
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Stock"
         CType(Me.dgvStock, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -124,5 +128,5 @@ Partial Class Stock
     Friend WithEvents btnAgregarStock As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents btnVolver As Button
+    Friend WithEvents btnVolver As PictureBox
 End Class

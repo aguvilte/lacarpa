@@ -47,6 +47,10 @@ Public Class Delivery
         btnAgregarProd2.Visible = False
         btnAgregarProd3.Visible = False
 
+        dgvProductos1.DataSource = ""
+        dgvProductos2.DataSource = ""
+        dgvProductos3.DataSource = ""
+
         'ACTUALIZA MONTO DEL PEDIDO ACTUAL
         CalculaMonto(numeroMesa)
     End Sub

@@ -141,4 +141,9 @@ Public Class PrNuevoEdit
             PrecioNuevoDistinto = True
         End If
     End Sub
+
+    Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
+        Principal.Show()
+        Me.Close()
+    End Sub
 End Class

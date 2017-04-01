@@ -154,6 +154,7 @@ Partial Class Mesas1
         Me.Controls.Add(Me.cbNombreProd)
         Me.Controls.Add(Me.dgvProductos)
         Me.Name = "Mesas1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mesas1"
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAgregarProd, System.ComponentModel.ISupportInitialize).EndInit()

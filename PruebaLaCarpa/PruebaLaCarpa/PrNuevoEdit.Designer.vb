@@ -33,7 +33,9 @@ Partial Class PrNuevoEdit
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btnVolver = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnModificar
@@ -106,7 +108,7 @@ Partial Class PrNuevoEdit
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(57, 226)
+        Me.btnNuevo.Location = New System.Drawing.Point(125, 225)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
         Me.btnNuevo.TabIndex = 0
@@ -129,11 +131,23 @@ Partial Class PrNuevoEdit
         Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
         Me.DataGridView1.TabIndex = 0
         '
+        'btnVolver
+        '
+        Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
+        Me.btnVolver.Location = New System.Drawing.Point(12, 227)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(40, 40)
+        Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnVolver.TabIndex = 20
+        Me.btnVolver.TabStop = False
+        '
         'PrNuevoEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(776, 279)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.tbPrecioNuevo)
         Me.Controls.Add(Me.tbPrecio)
@@ -147,6 +161,7 @@ Partial Class PrNuevoEdit
         Me.Name = "PrNuevoEdit"
         Me.Text = "PrNuevoEdit"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -163,4 +178,5 @@ Partial Class PrNuevoEdit
     Friend WithEvents btnNuevo As Button
     Friend WithEvents btnEliminar As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btnVolver As PictureBox
 End Class
