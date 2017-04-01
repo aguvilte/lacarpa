@@ -427,4 +427,8 @@ Public Class Principal
             Application.ExitThread()
         End If
     End Sub
+
+    Private Sub Principal_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Application.ExitThread()
+    End Sub
 End Class

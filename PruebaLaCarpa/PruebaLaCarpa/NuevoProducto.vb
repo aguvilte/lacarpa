@@ -61,5 +61,8 @@ Public Class NuevoProducto
         Desconectarse()
     End Sub
 
-
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        PrNuevoEdit.Show()
+        Me.Close()
+    End Sub
 End Class

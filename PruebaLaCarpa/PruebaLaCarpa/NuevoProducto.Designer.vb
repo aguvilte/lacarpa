@@ -26,6 +26,7 @@ Partial Class NuevoProducto
         Me.tbTipoProd = New System.Windows.Forms.TextBox()
         Me.tbPrecioProd = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'tbNombreProd
@@ -58,11 +59,21 @@ Partial Class NuevoProducto
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
+        'btnCancelar
+        '
+        Me.btnCancelar.Location = New System.Drawing.Point(40, 209)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 1
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
+        '
         'NuevoProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(198, 261)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.tbPrecioProd)
         Me.Controls.Add(Me.tbTipoProd)
@@ -78,4 +89,5 @@ Partial Class NuevoProducto
     Friend WithEvents tbTipoProd As TextBox
     Friend WithEvents tbPrecioProd As TextBox
     Friend WithEvents btnGuardar As Button
+    Friend WithEvents btnCancelar As Button
 End Class

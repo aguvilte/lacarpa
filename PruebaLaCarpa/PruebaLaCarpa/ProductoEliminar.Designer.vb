@@ -25,6 +25,7 @@ Partial Class ProductoEliminar
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.cbProd = New System.Windows.Forms.ComboBox()
         Me.cbTipoProd = New System.Windows.Forms.ComboBox()
+        Me.btnCancelar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnAceptar
@@ -52,6 +53,15 @@ Partial Class ProductoEliminar
         Me.cbTipoProd.Size = New System.Drawing.Size(160, 21)
         Me.cbTipoProd.TabIndex = 2
         '
+        'btnCancelar
+        '
+        Me.btnCancelar.Location = New System.Drawing.Point(97, 213)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 1
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
+        '
         'ProductoEliminar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -59,6 +69,7 @@ Partial Class ProductoEliminar
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.cbTipoProd)
         Me.Controls.Add(Me.cbProd)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
         Me.Name = "ProductoEliminar"
         Me.Text = "ProductoEliminar"
@@ -68,4 +79,5 @@ Partial Class ProductoEliminar
     Friend WithEvents btnAceptar As Button
     Friend WithEvents cbProd As ComboBox
     Friend WithEvents cbTipoProd As ComboBox
+    Friend WithEvents btnCancelar As Button
 End Class

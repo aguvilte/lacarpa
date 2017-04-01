@@ -57,25 +57,34 @@ Public Class ProductoEliminar
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
 
-        BuscarIndiceProducto()
+        If MsgBox("¿Está seguro que quiere eliminar el producto seleccionado?", MsgBoxStyle.YesNo, "Eliminar producto") = MsgBoxResult.Yes Then
+            BuscarIndiceProducto()
 
-        ds = New DataSet
-        da = New OleDbDataAdapter
+            ds = New DataSet
+            da = New OleDbDataAdapter
 
-        ds.Tables.Add("Productos")
-        da.SelectCommand = New OleDbCommand("SELECT * FROM productos", Conexion)
-        da.Fill(ds.Tables("Productos"))
-        ds.Tables("Productos").Rows(0).Delete()
-        da.DeleteCommand = New OleDbCommand("DELETE FROM productos WHERE nombre = '" & cbProd.Text & "'", Conexion)
-        da.Update(ds.Tables("Productos"))
+            ds.Tables.Add("Productos")
+            da.SelectCommand = New OleDbCommand("SELECT * FROM productos", Conexion)
+            da.Fill(ds.Tables("Productos"))
+            ds.Tables("Productos").Rows(0).Delete()
+            da.DeleteCommand = New OleDbCommand("DELETE FROM productos WHERE nombre = '" & cbProd.Text & "'", Conexion)
+            da.Update(ds.Tables("Productos"))
 
-        ds.Tables.Add("ProductosTipos")
-        da.SelectCommand = New OleDbCommand("SELECT * FROM productos_tipos", Conexion)
-        da.Fill(ds.Tables("ProductosTipos"))
-        ds.Tables("ProductosTipos").Rows(0).Delete()
-        da.DeleteCommand = New OleDbCommand("DELETE FROM productos_tipos WHERE id_producto = " & indiceProducto & " AND tipo_producto = '" & cbTipoProd.Text.ToString & "'", Conexion)
-        da.Update(ds.Tables("ProductosTipos"))
+            ds.Tables.Add("ProductosTipos")
+            da.SelectCommand = New OleDbCommand("SELECT * FROM productos_tipos", Conexion)
+            da.Fill(ds.Tables("ProductosTipos"))
+            ds.Tables("ProductosTipos").Rows(0).Delete()
+            da.DeleteCommand = New OleDbCommand("DELETE FROM productos_tipos WHERE id_producto = " & indiceProducto & " AND tipo_producto = '" & cbTipoProd.Text.ToString & "'", Conexion)
+            da.Update(ds.Tables("ProductosTipos"))
 
+            PrNuevoEdit.Show()
+            Me.Close()
+        End If
 
+    End Sub
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        PrNuevoEdit.Show()
+        Me.Close()
     End Sub
 End Class

@@ -67,11 +67,12 @@ Public Class PrNuevoEdit
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         NuevoProducto.Show()
+        Me.Close()
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         ProductoEliminar.Show()
-
+        Me.Close()
     End Sub
 
     Private Sub tbPrecioNuevo_TextChanged(sender As Object, e As EventArgs) Handles tbPrecioNuevo.TextChanged
