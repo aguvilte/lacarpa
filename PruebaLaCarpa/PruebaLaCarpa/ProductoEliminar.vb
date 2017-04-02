@@ -25,7 +25,7 @@ Public Class ProductoEliminar
         Desconectarse()
     End Sub
 
-    Private Sub cbProd_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbProd.SelectedIndexChanged
+    Private Sub cbProd_SelectedIndexChanged(sender As Object, e As EventArgs)
         Conectarse()
         BuscarIndiceProducto()
 
@@ -55,7 +55,7 @@ Public Class ProductoEliminar
 
     End Sub
 
-    Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
+    Private Sub btnAceptar_Click(sender As Object, e As EventArgs)
 
         If MsgBox("¿Está seguro que quiere eliminar el producto seleccionado?", MsgBoxStyle.YesNo, "Eliminar producto") = MsgBoxResult.Yes Then
             BuscarIndiceProducto()
@@ -83,7 +83,16 @@ Public Class ProductoEliminar
 
     End Sub
 
-    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs)
+        PrNuevoEdit.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ProductoEliminar_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        PrNuevoEdit.Show()
+    End Sub
+
+    Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
         PrNuevoEdit.Show()
         Me.Close()
     End Sub

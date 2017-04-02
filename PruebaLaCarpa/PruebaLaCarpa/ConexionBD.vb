@@ -7,7 +7,7 @@ Module ConnectionDB
 
     Sub Conectarse()
         Try
-            cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\vilte\Desktop\Desktop\ProgramaciónFinalFinal\lacarpadb.accdb"
+            cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\ProgramaciónFinalFinalAgustin\lacarpadb.accdb"
             miConexion = New OleDbConnection(cadenaConexion)
             miConexion.Open()
         Catch ex As Exception
