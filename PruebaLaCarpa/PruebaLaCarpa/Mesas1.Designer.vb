@@ -144,7 +144,7 @@ Partial Class Mesas1
         Me.tbAtajo.Location = New System.Drawing.Point(13, 260)
         Me.tbAtajo.Name = "tbAtajo"
         Me.tbAtajo.Size = New System.Drawing.Size(75, 20)
-        Me.tbAtajo.TabIndex = 20
+        Me.tbAtajo.TabIndex = 0
         '
         'Mesas1
         '

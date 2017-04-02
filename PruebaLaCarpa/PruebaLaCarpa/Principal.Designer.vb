@@ -1106,7 +1106,7 @@ Partial Class Principal
         '
         Me.btConfigurar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btConfigurar.Image = Global.PruebaLaCarpa.My.Resources.Resources.settings_1
-        Me.btConfigurar.Location = New System.Drawing.Point(117, 19)
+        Me.btConfigurar.Location = New System.Drawing.Point(114, 19)
         Me.btConfigurar.Name = "btConfigurar"
         Me.btConfigurar.Size = New System.Drawing.Size(50, 50)
         Me.btConfigurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
