@@ -48,7 +48,7 @@ Partial Class Stock
         '
         Me.cbTipoStock.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTipoStock.FormattingEnabled = True
-        Me.cbTipoStock.Items.AddRange(New Object() {"Carne", "Cerdo", "Pollo"})
+        Me.cbTipoStock.Items.AddRange(New Object() {"Carne", "Pollo", "Cerdo"})
         Me.cbTipoStock.Location = New System.Drawing.Point(11, 230)
         Me.cbTipoStock.Name = "cbTipoStock"
         Me.cbTipoStock.Size = New System.Drawing.Size(260, 24)
@@ -64,6 +64,7 @@ Partial Class Stock
         '
         'btnAgregarStock
         '
+        Me.btnAgregarStock.Enabled = False
         Me.btnAgregarStock.Location = New System.Drawing.Point(101, 349)
         Me.btnAgregarStock.Name = "btnAgregarStock"
         Me.btnAgregarStock.Size = New System.Drawing.Size(75, 23)

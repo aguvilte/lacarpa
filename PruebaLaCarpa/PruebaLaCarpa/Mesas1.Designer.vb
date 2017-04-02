@@ -32,6 +32,7 @@ Partial Class Mesas1
         Me.dgvProductos = New System.Windows.Forms.DataGridView()
         Me.btnAgregarProd = New System.Windows.Forms.PictureBox()
         Me.btnVolver = New System.Windows.Forms.PictureBox()
+        Me.tbAtajo = New System.Windows.Forms.TextBox()
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarProd, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -138,11 +139,19 @@ Partial Class Mesas1
         Me.btnVolver.TabIndex = 19
         Me.btnVolver.TabStop = False
         '
+        'tbAtajo
+        '
+        Me.tbAtajo.Location = New System.Drawing.Point(13, 260)
+        Me.tbAtajo.Name = "tbAtajo"
+        Me.tbAtajo.Size = New System.Drawing.Size(75, 20)
+        Me.tbAtajo.TabIndex = 20
+        '
         'Mesas1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(490, 503)
+        Me.Controls.Add(Me.tbAtajo)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnAgregarProd)
         Me.Controls.Add(Me.Label4)
@@ -173,4 +182,5 @@ Partial Class Mesas1
     Friend WithEvents cbNombreProd As ComboBox
     Friend WithEvents dgvProductos As DataGridView
     Friend WithEvents btnVolver As PictureBox
+    Friend WithEvents tbAtajo As TextBox
 End Class

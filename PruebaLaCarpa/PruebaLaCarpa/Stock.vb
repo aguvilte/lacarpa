@@ -90,4 +90,20 @@ Public Class Stock
         Me.Close()
         Principal.Show()
     End Sub
+
+    Private Sub cbTipoStock_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTipoStock.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub tbCantidadStock_TextChanged(sender As Object, e As EventArgs) Handles tbCantidadStock.TextChanged
+        If IsNumeric(tbCantidadStock.Text) Then
+            If cbTipoStock.Text = "Carne" Or cbTipoStock.Text = "Pollo" Or cbTipoStock.Text = "Cerdo" Then
+                If CInt(tbCantidadStock.Text) > 0 Then
+                    btnAgregarStock.Enabled = True
+                End If
+            End If
+        Else
+            btnAgregarStock.Enabled = False
+        End If
+    End Sub
 End Class
