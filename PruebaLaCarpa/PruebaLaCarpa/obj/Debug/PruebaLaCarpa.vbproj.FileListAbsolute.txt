@@ -165,7 +165,6 @@ C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\b
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\bin\Debug\PruebaLaCarpa.xml
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\bin\Debug\MySql.Data.dll
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\bin\Debug\MySql.Data.xml
-C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.vbprojResolveAssemblyReference.cache
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.Administracion.resources
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.Delivery.resources
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.Estadisticas.resources
@@ -205,3 +204,4 @@ C:\Users\Ricky\Desktop\lacarpa\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCar
 C:\Users\Ricky\Desktop\lacarpa\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.Stock.resources
 C:\Users\Ricky\Desktop\lacarpa\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.vbproj.GenerateResource.Cache
 C:\Users\Ricky\Desktop\lacarpa\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.EditarProducto.resources
+C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.EditarProducto.resources
