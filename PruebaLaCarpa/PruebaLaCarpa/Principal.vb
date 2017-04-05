@@ -30,7 +30,7 @@ Public Class Principal
     Private Sub MesasClick(numeroMesa As Integer)
         nuevaVentana = True
         _numeroMesa = numeroMesa
-        Mesas1.Show()
+        Mesa.Show()
         Me.Close()
     End Sub
 
@@ -421,7 +421,7 @@ Public Class Principal
 
     Private Sub btConfigurar_Click(sender As Object, e As EventArgs) Handles btConfigurar.Click
         nuevaVentana = True
-        PrNuevoEdit.Show()
+        AdministrarProducto.Show()
         Me.Close()
     End Sub
 
@@ -437,10 +437,12 @@ Public Class Principal
         End If
     End Sub
 
-    Private Sub Principal_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+    Private Sub Principal_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If nuevaVentana = False Then
             If MsgBox("¿Está seguro que quiere cerrar el programa?", MsgBoxStyle.YesNo, "Cerrar programa") = MsgBoxResult.Yes Then
                 Application.ExitThread()
+            Else
+                e.Cancel = True
             End If
         End If
     End Sub

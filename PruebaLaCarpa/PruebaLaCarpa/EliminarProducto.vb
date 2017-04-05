@@ -85,19 +85,19 @@ Public Class EliminarProducto
             da.DeleteCommand = New OleDbCommand("DELETE FROM productos_tipos WHERE id_producto = " & indiceProducto & " AND tipo_producto = '" & cbTipoProd.Text.ToString & "'", Conexion)
             da.Update(ds.Tables("ProductosTipos"))
 
-            PrNuevoEdit.Show()
+            AdministrarProducto.Show()
             Me.Close()
         End If
 
     End Sub
 
     Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
-        PrNuevoEdit.Show()
+        AdministrarProducto.Show()
         Me.Close()
     End Sub
 
     Private Sub ProductoEliminar_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        PrNuevoEdit.Show()
+        AdministrarProducto.Show()
     End Sub
 
     Private Sub cbTipoProd_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTipoProd.SelectedIndexChanged

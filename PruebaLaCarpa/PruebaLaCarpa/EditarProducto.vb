@@ -130,11 +130,11 @@ Public Class EditarProducto
     End Sub
 
     Private Sub EditarProducto_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        PrNuevoEdit.Show()
+        AdministrarProducto.Show()
     End Sub
 
     Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
-        PrNuevoEdit.Show()
+        AdministrarProducto.Show()
         Me.Close()
     End Sub
 End Class

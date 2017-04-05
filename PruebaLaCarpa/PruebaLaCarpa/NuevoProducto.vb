@@ -70,7 +70,7 @@ Public Class NuevoProducto
     End Sub
 
     Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
-        PrNuevoEdit.Show()
+        AdministrarProducto.Show()
         Me.Close()
     End Sub
 

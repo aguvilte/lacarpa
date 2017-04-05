@@ -76,12 +76,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administracion.Designer.vb">
-      <DependentUpon>Administracion.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Administracion.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ConexionBD.vb" />
     <Compile Include="Delivery.Designer.vb">
       <DependentUpon>Delivery.vb</DependentUpon>
@@ -119,10 +113,10 @@
     <Compile Include="MesaRecepcion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mesas1.Designer.vb">
-      <DependentUpon>Mesas1.vb</DependentUpon>
+    <Compile Include="Mesa.Designer.vb">
+      <DependentUpon>Mesa.vb</DependentUpon>
     </Compile>
-    <Compile Include="Mesas1.vb">
+    <Compile Include="Mesa.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NuevoProducto.Designer.vb">
@@ -135,12 +129,6 @@
       <DependentUpon>Principal.vb</DependentUpon>
     </Compile>
     <Compile Include="Principal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mesas.Designer.vb">
-      <DependentUpon>Mesas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Mesas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -158,10 +146,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PrNuevoEdit.Designer.vb">
-      <DependentUpon>PrNuevoEdit.vb</DependentUpon>
+    <Compile Include="AdministrarProducto.Designer.vb">
+      <DependentUpon>AdministrarProducto.vb</DependentUpon>
     </Compile>
-    <Compile Include="PrNuevoEdit.vb">
+    <Compile Include="AdministrarProducto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Stock.Designer.vb">
@@ -172,9 +160,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Administracion.resx">
-      <DependentUpon>Administracion.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Delivery.resx">
       <DependentUpon>Delivery.vb</DependentUpon>
     </EmbeddedResource>
@@ -193,8 +178,8 @@
     <EmbeddedResource Include="MesaRecepcion.resx">
       <DependentUpon>MesaRecepcion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mesas1.resx">
-      <DependentUpon>Mesas1.vb</DependentUpon>
+    <EmbeddedResource Include="Mesa.resx">
+      <DependentUpon>Mesa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoProducto.resx">
       <DependentUpon>NuevoProducto.vb</DependentUpon>
@@ -202,17 +187,14 @@
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mesas.resx">
-      <DependentUpon>Mesas.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrNuevoEdit.resx">
-      <DependentUpon>PrNuevoEdit.vb</DependentUpon>
+    <EmbeddedResource Include="AdministrarProducto.resx">
+      <DependentUpon>AdministrarProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.vb</DependentUpon>

@@ -124,6 +124,7 @@ Partial Class NuevoProducto
         Me.Controls.Add(Me.tbPrecioProd)
         Me.Controls.Add(Me.tbTipoProd)
         Me.Controls.Add(Me.tbNombreProd)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "NuevoProducto"

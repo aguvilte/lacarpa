@@ -150,6 +150,7 @@ Partial Class EditarProducto
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cbTipoProd)
         Me.Controls.Add(Me.cbNombreProd)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "EditarProducto"
