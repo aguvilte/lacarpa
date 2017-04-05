@@ -201,6 +201,6 @@ C:\Users\Ricky\Desktop\lacarpa\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCar
 C:\Users\Ricky\Desktop\lacarpa\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.EditarProducto.resources
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.EditarProducto.resources
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.EliminarProducto.resources
-C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.vbprojResolveAssemblyReference.cache
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.Mesa.resources
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.AdministrarProducto.resources
+C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.Presentacion.resources

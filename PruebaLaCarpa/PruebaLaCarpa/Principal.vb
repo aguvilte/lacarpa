@@ -1,4 +1,4 @@
-﻿Imports PruebaLaCarpa.Mesas
+﻿Imports PruebaLaCarpa.Mesa
 Imports System.Data.OleDb
 
 Public Class Principal

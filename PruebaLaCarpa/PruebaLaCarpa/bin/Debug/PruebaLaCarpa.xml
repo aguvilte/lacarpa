@@ -32,6 +32,11 @@ PruebaLaCarpa
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PruebaLaCarpa.My.Resources.Resources.asdasd">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PruebaLaCarpa.My.Resources.Resources.bar_chart">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
