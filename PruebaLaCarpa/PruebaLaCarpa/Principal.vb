@@ -438,11 +438,10 @@ Public Class Principal
     End Sub
 
     Private Sub Principal_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        'Application.ExitThread()
-        'Login.Close()
-        'MsgBox(nuevaVentana)
         If nuevaVentana = False Then
-            Application.ExitThread()
+            If MsgBox("¿Está seguro que quiere cerrar el programa?", MsgBoxStyle.YesNo, "Cerrar programa") = MsgBoxResult.Yes Then
+                Application.ExitThread()
+            End If
         End If
     End Sub
 End Class

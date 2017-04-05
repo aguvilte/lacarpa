@@ -23,9 +23,12 @@ Public Class EliminarProducto
         cbProd.Text = ""
         cbTipoProd.Text = ""
         Desconectarse()
+
+        cbTipoProd.Enabled = False
+        btnAceptar.Enabled = False
     End Sub
 
-    Private Sub cbProd_SelectedIndexChanged(sender As Object, e As EventArgs)
+    Private Sub cbProd_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbProd.SelectedIndexChanged
         Conectarse()
         BuscarIndiceProducto()
 
@@ -39,6 +42,11 @@ Public Class EliminarProducto
         cbTipoProd.ValueMember = "tipo_producto"
 
         Desconectarse()
+        cbTipoProd.Enabled = True
+
+        If cbProd.Text <> "" And cbTipoProd.Text <> "" And cbTipoProd.Enabled = True Then
+            btnAceptar.Enabled = True
+        End If
     End Sub
 
     Private Sub BuscarIndiceProducto()
@@ -90,5 +98,9 @@ Public Class EliminarProducto
 
     Private Sub ProductoEliminar_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         PrNuevoEdit.Show()
+    End Sub
+
+    Private Sub cbTipoProd_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTipoProd.SelectedIndexChanged
+
     End Sub
 End Class

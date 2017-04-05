@@ -47,9 +47,9 @@ Partial Class Mesas1
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonShadow
         Me.Label4.Location = New System.Drawing.Point(110, 323)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 13)
+        Me.Label4.Size = New System.Drawing.Size(57, 13)
         Me.Label4.TabIndex = 15
-        Me.Label4.Text = "Cantidad: "
+        Me.Label4.Text = "Cantidad"
         '
         'Label2
         '
@@ -59,9 +59,9 @@ Partial Class Mesas1
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonShadow
         Me.Label2.Location = New System.Drawing.Point(82, 270)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(40, 13)
+        Me.Label2.Size = New System.Drawing.Size(32, 13)
         Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Tipo: "
+        Me.Label2.Text = "Tipo"
         '
         'Label1
         '
@@ -71,15 +71,15 @@ Partial Class Mesas1
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonShadow
         Me.Label1.Location = New System.Drawing.Point(82, 221)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 13)
+        Me.Label1.Size = New System.Drawing.Size(58, 13)
         Me.Label1.TabIndex = 17
-        Me.Label1.Text = "Producto: "
+        Me.Label1.Text = "Producto"
         '
         'btnCerrarPedido
         '
         Me.btnCerrarPedido.BackColor = System.Drawing.SystemColors.ControlDark
         Me.btnCerrarPedido.ForeColor = System.Drawing.Color.Black
-        Me.btnCerrarPedido.Location = New System.Drawing.Point(31, 385)
+        Me.btnCerrarPedido.Location = New System.Drawing.Point(36, 385)
         Me.btnCerrarPedido.Name = "btnCerrarPedido"
         Me.btnCerrarPedido.Size = New System.Drawing.Size(288, 34)
         Me.btnCerrarPedido.TabIndex = 14
