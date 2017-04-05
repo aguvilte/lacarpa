@@ -47,9 +47,9 @@ Public Class Delivery
         btnAgregarProd2.Visible = False
         btnAgregarProd3.Visible = False
 
-        dgvProductos1.DataSource = ""
-        dgvProductos2.DataSource = ""
-        dgvProductos3.DataSource = ""
+        'dgvProductos1.DataSource = ""
+        'dgvProductos2.DataSource = ""
+        'dgvProductos3.DataSource = ""
 
         'ACTUALIZA MONTO DEL PEDIDO ACTUAL
         CalculaMonto(numeroMesa)
@@ -399,4 +399,7 @@ Public Class Delivery
         numeroMesa -= 2
     End Sub
 
+    Private Sub Delivery_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Principal.Show()
+    End Sub
 End Class

@@ -84,10 +84,28 @@ Public Class Stock
         vistaDatos = ds.Tables("Stock2").DefaultView
         dgvStock.DataSource = vistaDatos
 
+        cbTipoStock.Text = ""
+        tbCantidadStock.Text = ""
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
         Me.Close()
         Principal.Show()
+    End Sub
+
+    Private Sub cbTipoStock_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTipoStock.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub tbCantidadStock_TextChanged(sender As Object, e As EventArgs) Handles tbCantidadStock.TextChanged
+        If IsNumeric(tbCantidadStock.Text) Then
+            If cbTipoStock.Text = "Carne" Or cbTipoStock.Text = "Pollo" Or cbTipoStock.Text = "Cerdo" Then
+                If CInt(tbCantidadStock.Text) > 0 Then
+                    btnAgregarStock.Enabled = True
+                End If
+            End If
+        Else
+            btnAgregarStock.Enabled = False
+        End If
     End Sub
 End Class

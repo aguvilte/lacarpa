@@ -61,8 +61,6 @@ Public Class Mesas1
         'ACTUALIZA MONTO DEL PEDIDO ACTUAL
         CalculaMonto()
         btnAgregarProd.Visible = False
-
-        dgvProductos.DataSource = ""
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
@@ -115,6 +113,80 @@ Public Class Mesas1
     End Sub
 
     Private Sub btnAgregarProd_Click(sender As Object, e As EventArgs) Handles btnAgregarProd.Click
+        AgregarProducto()
+    End Sub
+
+    Private Sub CalculaMonto()
+        comando = New OleDbCommand("SELECT precio FROM productos_tipos INNER JOIN mesas_productos ON productos_tipos.id_producto = mesas_productos.id_producto And productos_tipos.tipo_producto = mesas_productos.tipo_producto WHERE mesas_productos.id_mesa = " & numeroMesa, Conexion)
+        dr = comando.ExecuteReader()
+        If dr.HasRows Then
+            montoTotal = 0
+            While dr.Read
+                montoTotal += dr("precio")
+            End While
+        End If
+        btnCerrarPedido.Text = "Cerrar pedido - Monto total: $" & montoTotal
+    End Sub
+
+    Private Sub PintarMesaOcupada()
+        ds = New DataSet
+        ds.Tables.Add("Mesas")
+        da.SelectCommand = New OleDbCommand("SELECT * FROM mesas", Conexion)
+        da.Fill(ds.Tables("Mesas"))
+
+        Dim row As DataRow
+        row = ds.Tables("Mesas").Rows(0)
+        If mesaOcupadaBoolean = True Then
+            row("ocupada") = -1
+        Else
+            row("ocupada") = 0
+        End If
+
+        da.UpdateCommand = New OleDbCommand("UPDATE mesas SET ocupada=@ocu WHERE id_mesa=" & numeroMesa, Conexion)
+        da.UpdateCommand.Parameters.Add("@ocu", OleDbType.Boolean, 10, "ocupada")
+        da.Update(ds.Tables("Mesas"))
+    End Sub
+
+    Private Sub BuscarIndiceProducto()
+        comando = New OleDbCommand("SELECT id_producto FROM productos WHERE nombre = '" & cbNombreProd.Text & "'", Conexion)
+        dr = comando.ExecuteReader()
+        If dr.HasRows Then
+            While dr.Read
+                indiceProducto = dr("id_producto")
+            End While
+        End If
+    End Sub
+
+    Private Sub tbAtajo_TextChanged(sender As Object, e As EventArgs) Handles tbAtajo.TextChanged
+        Select Case tbAtajo.Text
+            Case "lc"
+                cbNombreProd.Text = "Lomito común"
+                cbTipoProd.Text = "Carne"
+                btnAgregarProd.Visible = True
+            Case "le"
+                cbNombreProd.Text = "Lomito especial"
+            Case "hc"
+                cbNombreProd.Text = "Hamburguesa común"
+            Case "he"
+                cbNombreProd.Text = "Hamburguesa especial"
+            Case "b"
+                cbNombreProd.Text = "Barroluco"
+            Case "sl"
+                cbNombreProd.Text = "Superlomo doble"
+            Case Else
+                cbNombreProd.Text = ""
+                cbTipoProd.Text = ""
+                btnAgregarProd.Visible = False
+        End Select
+    End Sub
+
+    Private Sub tbAtajo_KeyDown(sender As Object, e As KeyEventArgs) Handles tbAtajo.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            AgregarProducto()
+        End If
+    End Sub
+
+    Private Sub AgregarProducto()
         mesaOcupadaBoolean = True
 
         Dim row As DataRow
@@ -180,44 +252,7 @@ Public Class Mesas1
         PintarMesaOcupada()
     End Sub
 
-    Private Sub CalculaMonto()
-        comando = New OleDbCommand("SELECT precio FROM productos_tipos INNER JOIN mesas_productos ON productos_tipos.id_producto = mesas_productos.id_producto And productos_tipos.tipo_producto = mesas_productos.tipo_producto WHERE mesas_productos.id_mesa = " & numeroMesa, Conexion)
-        dr = comando.ExecuteReader()
-        If dr.HasRows Then
-            montoTotal = 0
-            While dr.Read
-                montoTotal += dr("precio")
-            End While
-        End If
-        btnCerrarPedido.Text = "Cerrar pedido - Monto total: $" & montoTotal
-    End Sub
-
-    Private Sub PintarMesaOcupada()
-        ds = New DataSet
-        ds.Tables.Add("Mesas")
-        da.SelectCommand = New OleDbCommand("SELECT * FROM mesas", Conexion)
-        da.Fill(ds.Tables("Mesas"))
-
-        Dim row As DataRow
-        row = ds.Tables("Mesas").Rows(0)
-        If mesaOcupadaBoolean = True Then
-            row("ocupada") = -1
-        Else
-            row("ocupada") = 0
-        End If
-
-        da.UpdateCommand = New OleDbCommand("UPDATE mesas SET ocupada=@ocu WHERE id_mesa=" & numeroMesa, Conexion)
-        da.UpdateCommand.Parameters.Add("@ocu", OleDbType.Boolean, 10, "ocupada")
-        da.Update(ds.Tables("Mesas"))
-    End Sub
-
-    Private Sub BuscarIndiceProducto()
-        comando = New OleDbCommand("SELECT id_producto FROM productos WHERE nombre = '" & cbNombreProd.Text & "'", Conexion)
-        dr = comando.ExecuteReader()
-        If dr.HasRows Then
-            While dr.Read
-                indiceProducto = dr("id_producto")
-            End While
-        End If
+    Private Sub Mesas1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Principal.Show()
     End Sub
 End Class

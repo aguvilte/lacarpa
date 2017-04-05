@@ -396,4 +396,8 @@ Public Class MesaRecepcion
         Principal.Show()
         Me.Close()
     End Sub
+
+    Private Sub MesaRecepcion_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Principal.Show()
+    End Sub
 End Class

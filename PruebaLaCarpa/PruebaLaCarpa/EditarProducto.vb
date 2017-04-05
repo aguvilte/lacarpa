@@ -70,7 +70,7 @@ Public Class EditarProducto
         End If
     End Sub
 
-    Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
+    Private Sub btnModificar_Click(sender As Object, e As EventArgs)
         ComprobarCambioPrecio()
 
         If PrecioNuevoDistinto = True Then
@@ -129,12 +129,12 @@ Public Class EditarProducto
         End If
     End Sub
 
-    Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
-        PrNuevoEdit.Show()
-        Me.Close()
-    End Sub
-
     Private Sub EditarProducto_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         PrNuevoEdit.Show()
+    End Sub
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        PrNuevoEdit.Show()
+        Me.Close()
     End Sub
 End Class

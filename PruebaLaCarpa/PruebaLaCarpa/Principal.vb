@@ -10,6 +10,8 @@ Public Class Principal
     Dim _numeroMesa As Integer
     Dim mesaOcupadaBoolean As Boolean
 
+    Dim nuevaVentana As Boolean = False
+
     Public Shared Function NumeroMesa() As Integer
         Return Principal._numeroMesa
     End Function
@@ -26,12 +28,14 @@ Public Class Principal
     End Sub
 
     Private Sub MesasClick(numeroMesa As Integer)
+        nuevaVentana = True
         _numeroMesa = numeroMesa
         Mesas1.Show()
         Me.Close()
     End Sub
 
     Private Sub DeliveryClick(numeroDelivery As Integer)
+        nuevaVentana = True
         _numeroMesa = numeroDelivery
         Delivery.Show()
         Me.Close()
@@ -391,13 +395,16 @@ Public Class Principal
     End Sub
 
     Private Sub btStock_Click(sender As Object, e As EventArgs) Handles btStock.Click
+        nuevaVentana = True
         Stock.Show()
         Me.Close()
     End Sub
 
     Private Sub btnMesaRecepcion_Click(sender As Object, e As EventArgs) Handles btnMesaRecepcion.Click
+        nuevaVentana = True
         MesaRecepcion.Show()
         Me.Close()
+
     End Sub
 
     Private Sub Bt1delivery_Click(sender As Object, e As EventArgs) Handles Bt1delivery.Click
@@ -413,6 +420,7 @@ Public Class Principal
     End Sub
 
     Private Sub btConfigurar_Click(sender As Object, e As EventArgs) Handles btConfigurar.Click
+        nuevaVentana = True
         PrNuevoEdit.Show()
         Me.Close()
     End Sub
@@ -431,5 +439,10 @@ Public Class Principal
 
     Private Sub Principal_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         'Application.ExitThread()
+        'Login.Close()
+        'MsgBox(nuevaVentana)
+        If nuevaVentana = False Then
+            Application.ExitThread()
+        End If
     End Sub
 End Class

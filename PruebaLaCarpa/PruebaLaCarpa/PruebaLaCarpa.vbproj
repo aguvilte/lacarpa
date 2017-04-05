@@ -95,6 +95,12 @@
     <Compile Include="EditarProducto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EliminarProducto.Designer.vb">
+      <DependentUpon>EliminarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Estadisticas.Designer.vb">
       <DependentUpon>Estadisticas.vb</DependentUpon>
     </Compile>
@@ -158,12 +164,6 @@
     <Compile Include="PrNuevoEdit.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductoEliminar.Designer.vb">
-      <DependentUpon>ProductoEliminar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ProductoEliminar.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Stock.Designer.vb">
       <DependentUpon>Stock.vb</DependentUpon>
     </Compile>
@@ -180,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditarProducto.resx">
       <DependentUpon>EditarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarProducto.resx">
+      <DependentUpon>EliminarProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estadisticas.resx">
       <DependentUpon>Estadisticas.vb</DependentUpon>
@@ -210,9 +213,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PrNuevoEdit.resx">
       <DependentUpon>PrNuevoEdit.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProductoEliminar.resx">
-      <DependentUpon>ProductoEliminar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.vb</DependentUpon>

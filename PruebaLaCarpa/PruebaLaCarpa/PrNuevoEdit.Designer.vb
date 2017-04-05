@@ -22,6 +22,7 @@ Partial Class PrNuevoEdit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PrNuevoEdit))
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -58,9 +59,10 @@ Partial Class PrNuevoEdit
         '
         'btnVolver
         '
+        Me.btnVolver.BackColor = System.Drawing.Color.Transparent
         Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
-        Me.btnVolver.Location = New System.Drawing.Point(40, 116)
+        Me.btnVolver.Location = New System.Drawing.Point(40, 115)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(40, 40)
         Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -80,6 +82,8 @@ Partial Class PrNuevoEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Snow
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(125, 180)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnVolver)

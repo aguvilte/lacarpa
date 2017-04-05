@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 
-Public Class ProductoEliminar
+Public Class EliminarProducto2
     Private da As OleDbDataAdapter
     Private ds As DataSet
     Private dr As OleDbDataReader

@@ -10,9 +10,10 @@ Public Class PrNuevoEdit
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
-        ProductoEliminar.Show()
+        EliminarProducto.Show()
         Me.Hide()
     End Sub
+
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
         Principal.Show()
@@ -27,4 +28,5 @@ Public Class PrNuevoEdit
     Private Sub PrNuevoEdit_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         Principal.Show()
     End Sub
+
 End Class
