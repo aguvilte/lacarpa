@@ -17,6 +17,7 @@ Public Class Principal
     End Function
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Login.Hide()
         ToolTip()
         Select Case Login.NivelAcceso
             Case 1

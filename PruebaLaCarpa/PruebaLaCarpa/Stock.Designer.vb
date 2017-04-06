@@ -126,6 +126,7 @@ Partial Class Stock
         Me.Controls.Add(Me.dgvStock)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(299, 440)
         Me.MinimizeBox = False
         Me.Name = "Stock"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

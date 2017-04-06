@@ -78,7 +78,7 @@ Partial Class AdministrarProducto
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = True
         '
-        'PrNuevoEdit
+        'AdministrarProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -89,9 +89,11 @@ Partial Class AdministrarProducto
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnNuevo)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(141, 219)
         Me.MinimizeBox = False
-        Me.Name = "PrNuevoEdit"
+        Me.Name = "AdministrarProducto"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Administrar"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

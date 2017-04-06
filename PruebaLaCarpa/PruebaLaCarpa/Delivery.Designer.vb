@@ -35,17 +35,17 @@ Partial Class Delivery
         Me.dgvProductos3 = New System.Windows.Forms.DataGridView()
         Me.dgvProductos2 = New System.Windows.Forms.DataGridView()
         Me.dgvProductos1 = New System.Windows.Forms.DataGridView()
+        Me.btnVolver = New System.Windows.Forms.PictureBox()
         Me.btnAgregarProd2 = New System.Windows.Forms.PictureBox()
         Me.btnAgregarProd3 = New System.Windows.Forms.PictureBox()
         Me.btnAgregarProd1 = New System.Windows.Forms.PictureBox()
-        Me.btnVolver = New System.Windows.Forms.PictureBox()
         CType(Me.dgvProductos3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvProductos2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvProductos1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarProd2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarProd3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarProd1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label4
@@ -173,6 +173,17 @@ Partial Class Delivery
         Me.dgvProductos1.Size = New System.Drawing.Size(360, 150)
         Me.dgvProductos1.TabIndex = 28
         '
+        'btnVolver
+        '
+        Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
+        Me.btnVolver.Location = New System.Drawing.Point(12, 509)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(40, 40)
+        Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnVolver.TabIndex = 45
+        Me.btnVolver.TabStop = False
+        '
         'btnAgregarProd2
         '
         Me.btnAgregarProd2.Cursor = System.Windows.Forms.Cursors.Hand
@@ -206,17 +217,6 @@ Partial Class Delivery
         Me.btnAgregarProd1.TabIndex = 42
         Me.btnAgregarProd1.TabStop = False
         '
-        'btnVolver
-        '
-        Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
-        Me.btnVolver.Location = New System.Drawing.Point(12, 509)
-        Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(40, 40)
-        Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnVolver.TabIndex = 45
-        Me.btnVolver.TabStop = False
-        '
         'Delivery
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -239,16 +239,19 @@ Partial Class Delivery
         Me.Controls.Add(Me.dgvProductos2)
         Me.Controls.Add(Me.dgvProductos1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(800, 600)
+        Me.MinimizeBox = False
         Me.Name = "Delivery"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Delivery"
         CType(Me.dgvProductos3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvProductos2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvProductos1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAgregarProd2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAgregarProd3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnAgregarProd1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

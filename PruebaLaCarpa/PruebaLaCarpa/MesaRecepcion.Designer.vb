@@ -23,7 +23,6 @@ Partial Class MesaRecepcion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MesaRecepcion))
-        Me.btnAgregarProd1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,35 +33,25 @@ Partial Class MesaRecepcion
         Me.dgvProductos1 = New System.Windows.Forms.DataGridView()
         Me.dgvProductos2 = New System.Windows.Forms.DataGridView()
         Me.btnCerrarPedido2 = New System.Windows.Forms.Button()
-        Me.btnAgregarProd2 = New System.Windows.Forms.PictureBox()
         Me.dgvProductos3 = New System.Windows.Forms.DataGridView()
         Me.dgvProductos4 = New System.Windows.Forms.DataGridView()
         Me.btnCerrarPedido3 = New System.Windows.Forms.Button()
         Me.btnCerrarPedido4 = New System.Windows.Forms.Button()
-        Me.btnAgregarProd3 = New System.Windows.Forms.PictureBox()
-        Me.btnAgregarProd4 = New System.Windows.Forms.PictureBox()
         Me.btnVolver = New System.Windows.Forms.PictureBox()
-        CType(Me.btnAgregarProd1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnAgregarProd4 = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarProd2 = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarProd3 = New System.Windows.Forms.PictureBox()
+        Me.btnAgregarProd1 = New System.Windows.Forms.PictureBox()
         CType(Me.dgvProductos1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvProductos2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnAgregarProd2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvProductos3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvProductos4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnAgregarProd3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnAgregarProd4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarProd4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarProd2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarProd3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAgregarProd1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btnAgregarProd1
-        '
-        Me.btnAgregarProd1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAgregarProd1.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
-        Me.btnAgregarProd1.Location = New System.Drawing.Point(405, 136)
-        Me.btnAgregarProd1.Name = "btnAgregarProd1"
-        Me.btnAgregarProd1.Size = New System.Drawing.Size(40, 40)
-        Me.btnAgregarProd1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnAgregarProd1.TabIndex = 27
-        Me.btnAgregarProd1.TabStop = False
         '
         'Label4
         '
@@ -166,17 +155,6 @@ Partial Class MesaRecepcion
         Me.btnCerrarPedido2.Text = "Cerrar pedido"
         Me.btnCerrarPedido2.UseVisualStyleBackColor = False
         '
-        'btnAgregarProd2
-        '
-        Me.btnAgregarProd2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAgregarProd2.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
-        Me.btnAgregarProd2.Location = New System.Drawing.Point(405, 292)
-        Me.btnAgregarProd2.Name = "btnAgregarProd2"
-        Me.btnAgregarProd2.Size = New System.Drawing.Size(40, 40)
-        Me.btnAgregarProd2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnAgregarProd2.TabIndex = 27
-        Me.btnAgregarProd2.TabStop = False
-        '
         'dgvProductos3
         '
         Me.dgvProductos3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
@@ -223,16 +201,16 @@ Partial Class MesaRecepcion
         Me.btnCerrarPedido4.Text = "Cerrar pedido"
         Me.btnCerrarPedido4.UseVisualStyleBackColor = False
         '
-        'btnAgregarProd3
+        'btnVolver
         '
-        Me.btnAgregarProd3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAgregarProd3.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
-        Me.btnAgregarProd3.Location = New System.Drawing.Point(922, 136)
-        Me.btnAgregarProd3.Name = "btnAgregarProd3"
-        Me.btnAgregarProd3.Size = New System.Drawing.Size(40, 40)
-        Me.btnAgregarProd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnAgregarProd3.TabIndex = 27
-        Me.btnAgregarProd3.TabStop = False
+        Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
+        Me.btnVolver.Location = New System.Drawing.Point(12, 12)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(40, 40)
+        Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnVolver.TabIndex = 28
+        Me.btnVolver.TabStop = False
         '
         'btnAgregarProd4
         '
@@ -245,16 +223,38 @@ Partial Class MesaRecepcion
         Me.btnAgregarProd4.TabIndex = 27
         Me.btnAgregarProd4.TabStop = False
         '
-        'btnVolver
+        'btnAgregarProd2
         '
-        Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
-        Me.btnVolver.Location = New System.Drawing.Point(12, 12)
-        Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(40, 40)
-        Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnVolver.TabIndex = 28
-        Me.btnVolver.TabStop = False
+        Me.btnAgregarProd2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAgregarProd2.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
+        Me.btnAgregarProd2.Location = New System.Drawing.Point(405, 292)
+        Me.btnAgregarProd2.Name = "btnAgregarProd2"
+        Me.btnAgregarProd2.Size = New System.Drawing.Size(40, 40)
+        Me.btnAgregarProd2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnAgregarProd2.TabIndex = 27
+        Me.btnAgregarProd2.TabStop = False
+        '
+        'btnAgregarProd3
+        '
+        Me.btnAgregarProd3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAgregarProd3.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
+        Me.btnAgregarProd3.Location = New System.Drawing.Point(922, 136)
+        Me.btnAgregarProd3.Name = "btnAgregarProd3"
+        Me.btnAgregarProd3.Size = New System.Drawing.Size(40, 40)
+        Me.btnAgregarProd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnAgregarProd3.TabIndex = 27
+        Me.btnAgregarProd3.TabStop = False
+        '
+        'btnAgregarProd1
+        '
+        Me.btnAgregarProd1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAgregarProd1.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
+        Me.btnAgregarProd1.Location = New System.Drawing.Point(405, 136)
+        Me.btnAgregarProd1.Name = "btnAgregarProd1"
+        Me.btnAgregarProd1.Size = New System.Drawing.Size(40, 40)
+        Me.btnAgregarProd1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnAgregarProd1.TabIndex = 27
+        Me.btnAgregarProd1.TabStop = False
         '
         'MesaRecepcion
         '
@@ -281,18 +281,21 @@ Partial Class MesaRecepcion
         Me.Controls.Add(Me.dgvProductos2)
         Me.Controls.Add(Me.dgvProductos1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(1024, 491)
+        Me.MinimizeBox = False
         Me.Name = "MesaRecepcion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MesaRecepcion"
-        CType(Me.btnAgregarProd1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Recepción"
         CType(Me.dgvProductos1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvProductos2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnAgregarProd2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvProductos3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvProductos4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnAgregarProd3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnAgregarProd4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarProd4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarProd2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarProd3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAgregarProd1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -155,7 +155,7 @@ Partial Class Mesa
         Me.btnAgregarProd.TabIndex = 18
         Me.btnAgregarProd.TabStop = False
         '
-        'Mesas1
+        'Mesa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -172,7 +172,10 @@ Partial Class Mesa
         Me.Controls.Add(Me.cbTipoProd)
         Me.Controls.Add(Me.cbNombreProd)
         Me.Controls.Add(Me.dgvProductos)
-        Me.Name = "Mesas1"
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(378, 509)
+        Me.Name = "Mesa"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mesas1"
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).EndInit()

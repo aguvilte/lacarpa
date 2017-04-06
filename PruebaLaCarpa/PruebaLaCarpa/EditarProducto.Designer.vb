@@ -152,6 +152,7 @@ Partial Class EditarProducto
         Me.Controls.Add(Me.cbNombreProd)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(214, 313)
         Me.MinimizeBox = False
         Me.Name = "EditarProducto"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

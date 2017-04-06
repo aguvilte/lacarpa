@@ -1,7 +1,7 @@
 ﻿Public Class Presentacion
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         contador = contador + Timer1.Interval
-        If contador >= 2500 Then
+        If contador = 2500 Then
             Login.Show()
             Me.Hide()
         End If

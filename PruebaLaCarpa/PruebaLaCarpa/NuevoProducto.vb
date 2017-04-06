@@ -93,4 +93,8 @@ Public Class NuevoProducto
     Private Sub tbPrecioProd_TextChanged(sender As Object, e As EventArgs) Handles tbPrecioProd.TextChanged
         ActivarBoton()
     End Sub
+
+    Private Sub NuevoProducto_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        AdministrarProducto.Show()
+    End Sub
 End Class

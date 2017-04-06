@@ -22,12 +22,20 @@ Public Class Delivery
         Conectarse()
         ActivarBotonCerrarPedido()
 
-        For i As Integer = 200 To 403
+        For i As Integer = 200 To 402
             If i = Principal.NumeroMesa Then
                 numeroMesa = i
             End If
         Next
-        Me.Text = "Delivery " & numeroMesa
+
+        Select Case Principal.NumeroMesa
+            Case 200 And 201 And 202
+                Me.Text = "Delivery 1"
+            Case 300 And 301 And 302
+                Me.Text = "Delivery 2"
+            Case 400 And 401 And 402
+                Me.Text = "Delivery 3"
+        End Select
 
         ds = New DataSet
         da = New OleDbDataAdapter
