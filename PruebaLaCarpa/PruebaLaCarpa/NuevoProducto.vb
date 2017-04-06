@@ -39,11 +39,13 @@ Public Class NuevoProducto
             row("tipo_producto") = tbTipoProd.Text.ToString
             row("precio") = CInt(tbPrecioProd.Text)
 
+            MsgBox(indiceProducto)
+
             ds.Tables("ProductosTipos").Rows.Add(row)
 
             da.InsertCommand = New OleDbCommand("INSERT INTO productos_tipos (id_producto, tipo_producto, precio) VALUES (@idProd, @tipoProd, @precio)", Conexion)
 
-            da.InsertCommand.Parameters.Add("@idProd", OleDbType.BigInt, 1, "id_producto")
+            da.InsertCommand.Parameters.Add("@idProd", OleDbType.BigInt, 3, "id_producto")
             da.InsertCommand.Parameters.Add("@tipoProd", OleDbType.VarChar, 30, "tipo_producto")
             da.InsertCommand.Parameters.Add("@precio", OleDbType.BigInt, 4, "precio")
 

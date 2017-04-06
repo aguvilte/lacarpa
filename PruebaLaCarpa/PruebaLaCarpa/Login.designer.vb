@@ -27,12 +27,12 @@ Partial Class Login
         Me.TbContraseña = New System.Windows.Forms.TextBox()
         Me.lblUsuario = New System.Windows.Forms.Label()
         Me.lblContraseña = New System.Windows.Forms.Label()
+        Me.btIniciar = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btIniciar = New System.Windows.Forms.PictureBox()
+        CType(Me.btIniciar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btIniciar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TbUsuario
@@ -74,6 +74,18 @@ Partial Class Login
         Me.lblContraseña.TabIndex = 3
         Me.lblContraseña.Text = "Contraseña"
         '
+        'btIniciar
+        '
+        Me.btIniciar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btIniciar.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
+        Me.btIniciar.Location = New System.Drawing.Point(81, 169)
+        Me.btIniciar.Name = "btIniciar"
+        Me.btIniciar.Size = New System.Drawing.Size(75, 75)
+        Me.btIniciar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btIniciar.TabIndex = 6
+        Me.btIniciar.TabStop = False
+        Me.btIniciar.Visible = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.PruebaLaCarpa.My.Resources.Resources.key
@@ -94,18 +106,6 @@ Partial Class Login
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
-        'btIniciar
-        '
-        Me.btIniciar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btIniciar.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
-        Me.btIniciar.Location = New System.Drawing.Point(81, 169)
-        Me.btIniciar.Name = "btIniciar"
-        Me.btIniciar.Size = New System.Drawing.Size(75, 75)
-        Me.btIniciar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btIniciar.TabIndex = 6
-        Me.btIniciar.TabStop = False
-        Me.btIniciar.Visible = False
-        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -122,13 +122,14 @@ Partial Class Login
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(254, 306)
+        Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(254, 190)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Login"
+        Me.Text = "Iniciar sesión"
+        CType(Me.btIniciar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btIniciar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
