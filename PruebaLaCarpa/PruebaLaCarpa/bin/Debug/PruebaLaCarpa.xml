@@ -52,6 +52,11 @@ PruebaLaCarpa
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PruebaLaCarpa.My.Resources.Resources.delivery">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PruebaLaCarpa.My.Resources.Resources.edit">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -103,6 +108,16 @@ PruebaLaCarpa
 </summary>
 </member>
 <member name="P:PruebaLaCarpa.My.Resources.Resources.mesa">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PruebaLaCarpa.My.Resources.Resources.mesaprincipal">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PruebaLaCarpa.My.Resources.Resources.mesaprincipal1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

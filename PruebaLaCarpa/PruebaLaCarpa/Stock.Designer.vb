@@ -128,6 +128,7 @@ Partial Class Stock
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(299, 440)
         Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(299, 440)
         Me.Name = "Stock"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Stock"

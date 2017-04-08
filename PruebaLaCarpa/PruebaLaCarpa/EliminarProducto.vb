@@ -31,7 +31,6 @@ Public Class EliminarProducto
     Private Sub cbProd_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbProd.SelectedIndexChanged
         Conectarse()
         BuscarIndiceProducto()
-        MsgBox(indiceProducto)
 
         ds = New DataSet
 

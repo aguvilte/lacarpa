@@ -123,6 +123,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property delivery() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("delivery", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property edit() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("edit", resourceCulture)
@@ -226,6 +236,26 @@ Namespace My.Resources
         Friend ReadOnly Property mesa() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("mesa", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property mesaprincipal() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mesaprincipal", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property mesaprincipal1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mesaprincipal1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -307,6 +307,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\mesaprincipal1.png" />
+    <None Include="Resources\mesaprincipal.png" />
+    <None Include="Resources\delivery.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

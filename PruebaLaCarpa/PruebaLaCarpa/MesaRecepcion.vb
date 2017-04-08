@@ -43,10 +43,11 @@ Public Class MesaRecepcion
         btnAgregarProd3.Visible = False
         btnAgregarProd4.Visible = False
 
-        dgvProductos1.DataSource = ""
-        dgvProductos2.DataSource = ""
-        dgvProductos3.DataSource = ""
-        dgvProductos4.DataSource = ""
+        'dgvProductos1.DataSource = ""
+        'dgvProductos2.DataSource = ""
+        'dgvProductos3.DataSource = ""
+        'dgvProductos4.DataSource = ""
+        cbTipoProd.Enabled = False
     End Sub
 
     'Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
@@ -77,6 +78,8 @@ Public Class MesaRecepcion
         da.Fill(ds.Tables("TiposProductos"))
         cbTipoProd.DataSource = ds.Tables("TiposProductos").DefaultView
         cbTipoProd.ValueMember = "tipo_producto"
+
+        cbTipoProd.Enabled = True
     End Sub
 
     Private Sub btnCerrarPedido1_Click(sender As Object, e As EventArgs) Handles btnCerrarPedido1.Click

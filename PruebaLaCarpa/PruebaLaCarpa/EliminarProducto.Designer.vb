@@ -106,6 +106,7 @@ Partial Class EliminarProducto
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(214, 260)
         Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(214, 260)
         Me.Name = "EliminarProducto"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Eliminar"

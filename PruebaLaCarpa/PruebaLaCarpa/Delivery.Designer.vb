@@ -51,8 +51,9 @@ Partial Class Delivery
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label4.Location = New System.Drawing.Point(599, 259)
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label4.Location = New System.Drawing.Point(98, 150)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 13)
         Me.Label4.TabIndex = 39
@@ -61,8 +62,9 @@ Partial Class Delivery
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label2.Location = New System.Drawing.Point(356, 259)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.Location = New System.Drawing.Point(98, 95)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(34, 13)
         Me.Label2.TabIndex = 40
@@ -71,8 +73,9 @@ Partial Class Delivery
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label1.Location = New System.Drawing.Point(113, 259)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label1.Location = New System.Drawing.Point(98, 39)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 41
@@ -80,9 +83,9 @@ Partial Class Delivery
         '
         'btnCerrarPedido2
         '
-        Me.btnCerrarPedido2.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.btnCerrarPedido2.BackColor = System.Drawing.Color.Transparent
         Me.btnCerrarPedido2.ForeColor = System.Drawing.Color.Black
-        Me.btnCerrarPedido2.Location = New System.Drawing.Point(458, 183)
+        Me.btnCerrarPedido2.Location = New System.Drawing.Point(58, 382)
         Me.btnCerrarPedido2.Name = "btnCerrarPedido2"
         Me.btnCerrarPedido2.Size = New System.Drawing.Size(314, 40)
         Me.btnCerrarPedido2.TabIndex = 37
@@ -91,9 +94,9 @@ Partial Class Delivery
         '
         'btnCerrarPedido3
         '
-        Me.btnCerrarPedido3.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.btnCerrarPedido3.BackColor = System.Drawing.Color.Transparent
         Me.btnCerrarPedido3.ForeColor = System.Drawing.Color.Black
-        Me.btnCerrarPedido3.Location = New System.Drawing.Point(209, 329)
+        Me.btnCerrarPedido3.Location = New System.Drawing.Point(436, 382)
         Me.btnCerrarPedido3.Name = "btnCerrarPedido3"
         Me.btnCerrarPedido3.Size = New System.Drawing.Size(314, 40)
         Me.btnCerrarPedido3.TabIndex = 36
@@ -102,9 +105,9 @@ Partial Class Delivery
         '
         'btnCerrarPedido1
         '
-        Me.btnCerrarPedido1.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.btnCerrarPedido1.BackColor = System.Drawing.Color.Transparent
         Me.btnCerrarPedido1.ForeColor = System.Drawing.Color.Black
-        Me.btnCerrarPedido1.Location = New System.Drawing.Point(12, 183)
+        Me.btnCerrarPedido1.Location = New System.Drawing.Point(436, 168)
         Me.btnCerrarPedido1.Name = "btnCerrarPedido1"
         Me.btnCerrarPedido1.Size = New System.Drawing.Size(314, 40)
         Me.btnCerrarPedido1.TabIndex = 35
@@ -113,7 +116,7 @@ Partial Class Delivery
         '
         'tbCantProd
         '
-        Me.tbCantProd.Location = New System.Drawing.Point(602, 275)
+        Me.tbCantProd.Location = New System.Drawing.Point(101, 166)
         Me.tbCantProd.Name = "tbCantProd"
         Me.tbCantProd.Size = New System.Drawing.Size(52, 20)
         Me.tbCantProd.TabIndex = 34
@@ -122,7 +125,7 @@ Partial Class Delivery
         'cbTipoProd
         '
         Me.cbTipoProd.FormattingEnabled = True
-        Me.cbTipoProd.Location = New System.Drawing.Point(359, 275)
+        Me.cbTipoProd.Location = New System.Drawing.Point(101, 111)
         Me.cbTipoProd.Name = "cbTipoProd"
         Me.cbTipoProd.Size = New System.Drawing.Size(189, 21)
         Me.cbTipoProd.TabIndex = 33
@@ -132,7 +135,7 @@ Partial Class Delivery
         Me.cbNombreProd.BackColor = System.Drawing.SystemColors.Window
         Me.cbNombreProd.FormattingEnabled = True
         Me.cbNombreProd.ItemHeight = 13
-        Me.cbNombreProd.Location = New System.Drawing.Point(116, 275)
+        Me.cbNombreProd.Location = New System.Drawing.Point(101, 55)
         Me.cbNombreProd.Name = "cbNombreProd"
         Me.cbNombreProd.Size = New System.Drawing.Size(189, 21)
         Me.cbNombreProd.TabIndex = 32
@@ -142,7 +145,7 @@ Partial Class Delivery
         Me.dgvProductos3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
         Me.dgvProductos3.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.dgvProductos3.ColumnHeadersHeight = 35
-        Me.dgvProductos3.Location = New System.Drawing.Point(209, 375)
+        Me.dgvProductos3.Location = New System.Drawing.Point(390, 226)
         Me.dgvProductos3.Name = "dgvProductos3"
         Me.dgvProductos3.ReadOnly = True
         Me.dgvProductos3.RowHeadersWidth = 4
@@ -154,7 +157,7 @@ Partial Class Delivery
         Me.dgvProductos2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
         Me.dgvProductos2.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.dgvProductos2.ColumnHeadersHeight = 35
-        Me.dgvProductos2.Location = New System.Drawing.Point(412, 27)
+        Me.dgvProductos2.Location = New System.Drawing.Point(12, 226)
         Me.dgvProductos2.Name = "dgvProductos2"
         Me.dgvProductos2.ReadOnly = True
         Me.dgvProductos2.RowHeadersWidth = 4
@@ -166,7 +169,7 @@ Partial Class Delivery
         Me.dgvProductos1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
         Me.dgvProductos1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.dgvProductos1.ColumnHeadersHeight = 35
-        Me.dgvProductos1.Location = New System.Drawing.Point(12, 27)
+        Me.dgvProductos1.Location = New System.Drawing.Point(390, 12)
         Me.dgvProductos1.Name = "dgvProductos1"
         Me.dgvProductos1.ReadOnly = True
         Me.dgvProductos1.RowHeadersWidth = 4
@@ -175,9 +178,10 @@ Partial Class Delivery
         '
         'btnVolver
         '
+        Me.btnVolver.BackColor = System.Drawing.Color.Transparent
         Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnVolver.Image = Global.PruebaLaCarpa.My.Resources.Resources.home
-        Me.btnVolver.Location = New System.Drawing.Point(12, 509)
+        Me.btnVolver.Location = New System.Drawing.Point(12, 12)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(40, 40)
         Me.btnVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -186,9 +190,10 @@ Partial Class Delivery
         '
         'btnAgregarProd2
         '
+        Me.btnAgregarProd2.BackColor = System.Drawing.Color.Transparent
         Me.btnAgregarProd2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAgregarProd2.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
-        Me.btnAgregarProd2.Location = New System.Drawing.Point(412, 183)
+        Me.btnAgregarProd2.Location = New System.Drawing.Point(12, 382)
         Me.btnAgregarProd2.Name = "btnAgregarProd2"
         Me.btnAgregarProd2.Size = New System.Drawing.Size(40, 40)
         Me.btnAgregarProd2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -197,9 +202,10 @@ Partial Class Delivery
         '
         'btnAgregarProd3
         '
+        Me.btnAgregarProd3.BackColor = System.Drawing.Color.Transparent
         Me.btnAgregarProd3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAgregarProd3.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
-        Me.btnAgregarProd3.Location = New System.Drawing.Point(529, 329)
+        Me.btnAgregarProd3.Location = New System.Drawing.Point(390, 382)
         Me.btnAgregarProd3.Name = "btnAgregarProd3"
         Me.btnAgregarProd3.Size = New System.Drawing.Size(40, 40)
         Me.btnAgregarProd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -208,9 +214,10 @@ Partial Class Delivery
         '
         'btnAgregarProd1
         '
+        Me.btnAgregarProd1.BackColor = System.Drawing.Color.Transparent
         Me.btnAgregarProd1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAgregarProd1.Image = Global.PruebaLaCarpa.My.Resources.Resources.checked
-        Me.btnAgregarProd1.Location = New System.Drawing.Point(332, 183)
+        Me.btnAgregarProd1.Location = New System.Drawing.Point(390, 168)
         Me.btnAgregarProd1.Name = "btnAgregarProd1"
         Me.btnAgregarProd1.Size = New System.Drawing.Size(40, 40)
         Me.btnAgregarProd1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -221,7 +228,8 @@ Partial Class Delivery
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.BackgroundImage = Global.PruebaLaCarpa.My.Resources.Resources.delivery
+        Me.ClientSize = New System.Drawing.Size(766, 451)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnAgregarProd2)
         Me.Controls.Add(Me.btnAgregarProd3)
@@ -240,8 +248,9 @@ Partial Class Delivery
         Me.Controls.Add(Me.dgvProductos1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(800, 600)
+        Me.MaximumSize = New System.Drawing.Size(782, 490)
         Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(782, 490)
         Me.Name = "Delivery"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Delivery"

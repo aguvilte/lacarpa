@@ -18,7 +18,7 @@ Public Class Delivery
     Private cantidadStock As Integer
     Private mesaOcupadaBoolean As Boolean
 
-    Private Sub Mesas1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Delivery_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Conectarse()
         ActivarBotonCerrarPedido()
 
@@ -58,6 +58,7 @@ Public Class Delivery
         'dgvProductos1.DataSource = ""
         'dgvProductos2.DataSource = ""
         'dgvProductos3.DataSource = ""
+        cbTipoProd.Enabled = False
 
         'ACTUALIZA MONTO DEL PEDIDO ACTUAL
         CalculaMonto(numeroMesa)
@@ -90,7 +91,7 @@ Public Class Delivery
         cbTipoProd.DataSource = ds.Tables("TiposProductos").DefaultView
         cbTipoProd.ValueMember = "tipo_producto"
 
-
+        cbTipoProd.Enabled = True
     End Sub
 
     Private Sub btnCerrarPedido1_Click(sender As Object, e As EventArgs) Handles btnCerrarPedido1.Click

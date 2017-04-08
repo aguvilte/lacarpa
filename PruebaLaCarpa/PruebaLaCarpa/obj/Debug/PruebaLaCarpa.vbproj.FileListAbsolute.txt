@@ -204,3 +204,4 @@ C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\o
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.Mesa.resources
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.AdministrarProducto.resources
 C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.Presentacion.resources
+C:\Users\vilte\Desktop\AGU-MOD2\PruebaLaCarpaFinal\PruebaLaCarpa\PruebaLaCarpa\obj\Debug\PruebaLaCarpa.vbprojResolveAssemblyReference.cache

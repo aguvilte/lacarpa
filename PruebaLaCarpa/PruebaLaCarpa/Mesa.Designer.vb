@@ -34,6 +34,7 @@ Partial Class Mesa
         Me.tbAtajo = New System.Windows.Forms.TextBox()
         Me.btnVolver = New System.Windows.Forms.PictureBox()
         Me.btnAgregarProd = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnVolver, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnAgregarProd, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,6 +97,7 @@ Partial Class Mesa
         '
         'cbTipoProd
         '
+        Me.cbTipoProd.Enabled = False
         Me.cbTipoProd.FormattingEnabled = True
         Me.cbTipoProd.Location = New System.Drawing.Point(85, 286)
         Me.cbTipoProd.Name = "cbTipoProd"
@@ -155,12 +157,24 @@ Partial Class Mesa
         Me.btnAgregarProd.TabIndex = 18
         Me.btnAgregarProd.TabStop = False
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.Label3.Location = New System.Drawing.Point(256, 453)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(55, 13)
+        Me.Label3.TabIndex = 20
+        Me.Label3.Text = "Comando:"
+        '
         'Mesa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(362, 470)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.tbAtajo)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnAgregarProd)
@@ -175,6 +189,8 @@ Partial Class Mesa
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(378, 509)
+        Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(378, 509)
         Me.Name = "Mesa"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mesas1"
@@ -196,4 +212,5 @@ Partial Class Mesa
     Friend WithEvents dgvProductos As DataGridView
     Friend WithEvents btnVolver As PictureBox
     Friend WithEvents tbAtajo As TextBox
+    Friend WithEvents Label3 As Label
 End Class

@@ -60,6 +60,7 @@ Public Class Mesa
 
         'ACTUALIZA MONTO DEL PEDIDO ACTUAL
         CalculaMonto()
+        cbTipoProd.Enabled = False
         btnAgregarProd.Visible = False
     End Sub
 
@@ -82,6 +83,8 @@ Public Class Mesa
         cbTipoProd.ValueMember = "tipo_producto"
 
         btnAgregarProd.Visible = True
+
+        cbTipoProd.Enabled = True
     End Sub
 
     Private Sub btnCerrarPedido_Click(sender As Object, e As EventArgs) Handles btnCerrarPedido.Click

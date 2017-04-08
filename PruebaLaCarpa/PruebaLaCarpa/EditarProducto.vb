@@ -70,7 +70,7 @@ Public Class EditarProducto
         End If
     End Sub
 
-    Private Sub btnModificar_Click(sender As Object, e As EventArgs)
+    Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         ComprobarCambioPrecio()
 
         If PrecioNuevoDistinto = True Then
